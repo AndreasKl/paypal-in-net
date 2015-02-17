@@ -1,0 +1,23 @@
+﻿@model PayPalPayment.Controllers.HomeController.PayPalViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title></title>
+    </head>
+    <body>
+        <div>
+            You have payed your debts!
+            <p>
+                PayerId: @Model.PayerId<br/>
+                PaymentId: @Model.PaymentId<br/>
+                Token: @Model.Token<br/>
+            </p>
+        </div>
+    </body>
+</html>

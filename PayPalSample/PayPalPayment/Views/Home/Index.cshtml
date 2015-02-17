@@ -1,0 +1,22 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title></title>
+    </head>
+    <body>
+        <div>
+            Start payment!
+            @using(Html.BeginForm("Prepare", "Home", FormMethod.Post))
+            {
+                <button type="submit">Start checkout process.</button>
+                @Html.AntiForgeryToken()
+            }
+        </div>
+    </body>
+</html>
